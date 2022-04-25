@@ -1,11 +1,5 @@
-﻿using DevExpress.Mvvm;
-using DevExpress.Mvvm.DataAnnotations;
-using dotnetconfmini2205_dxmvvmExam.MessengerType;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DevExpress.Mvvm.DataAnnotations;
+using System.Diagnostics;
 
 namespace dotnetconfmini2205_dxmvvmExam.VIewModels
 {
@@ -15,6 +9,11 @@ namespace dotnetconfmini2205_dxmvvmExam.VIewModels
         public MainWindowViewModel()
         {
 
+        }
+
+        public void OnMainWindowLoaded()
+        {
+            Debug.WriteLine("MainWindow에서 Loaded 이벤트 발생!!");
         }
     }
 }

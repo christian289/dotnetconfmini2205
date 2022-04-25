@@ -1,7 +1,6 @@
 ﻿using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
 using dotnetconfmini2205_dxmvvmExam.VIewModels;
-using dotnetconfmini2205_dxmvvmExam.Views;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
