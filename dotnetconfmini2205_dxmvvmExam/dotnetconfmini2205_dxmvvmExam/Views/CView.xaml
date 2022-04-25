@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="dotnetconfmini2205_dxmvvmExam.Views.CView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:dotnetconfmini2205_dxmvvmExam.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=CViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.45*"/>
+            <RowDefinition Height="0.45*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.RowSpan="3"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   FontSize="100"
+                   Foreground="Crimson"
+                   Text="C"/>
+        <TextBlock Grid.Row="0"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   FontSize="15"
+                   Text="{Binding TextA}"/>
+        <TextBlock Grid.Row="1"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   FontSize="15"
+                   Text="{Binding TextB}"/>
+        <Button Grid.Row="2"
+                Command="{Binding SendCommand}"
+                Content="A,B로 문자열 전송"/>
+    </Grid>
+</UserControl>
