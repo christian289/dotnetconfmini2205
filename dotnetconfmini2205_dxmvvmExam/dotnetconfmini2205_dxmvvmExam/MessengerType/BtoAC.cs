@@ -1,7 +1,6 @@
 ﻿namespace dotnetconfmini2205_dxmvvmExam.MessengerType
 {
-    public class BtoAC
+    public class BtoAC : MessageBase
     {
-        public string SendMessage { get; set; }
     }
 }

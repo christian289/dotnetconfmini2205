@@ -3,8 +3,7 @@
 ## 의존성
 
 - Microsoft.Extensions.Hosting
-- DevExperssMvvm
-
+- DevExpressMvvm
 
 ## 시연순서
 
